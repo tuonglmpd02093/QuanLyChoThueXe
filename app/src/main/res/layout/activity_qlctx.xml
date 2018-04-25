@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QLCTXActivity"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/tvQuanly"
+        android:text="Customer Management"
+        android:textSize="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#716363"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvQuanly"
+        android:hint="Code"/>
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edCode"
+        android:hint="Name"/>
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edName"
+        android:hint="Email"/>
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edEmail"
+        android:hint="Phone"/>
+    <EditText
+        android:id="@+id/edAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPhone"
+        android:hint="Address"/>
+    <EditText
+        android:id="@+id/edXe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edAddress"
+        android:hint="Xe"/>
+    <EditText
+        android:id="@+id/edBiensoxe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edXe"
+        android:hint="Bien Số Xe"/>
+    <EditText
+        android:id="@+id/edMauxe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edBiensoxe"
+        android:hint="Màu Xe"/>
+    <LinearLayout
+        android:layout_below="@id/edMauxe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:background="#d2dbff"/>
+
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:background="#f7dddd"/>
+
+        <Button
+            android:id="@+id/btList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List"
+            android:background="#f0def4"/>
+        <Button
+            android:id="@+id/btEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btDelete"
+            android:text="Edit"
+            android:background="#feffd2"/>
+    </LinearLayout>
+
+</RelativeLayout>
