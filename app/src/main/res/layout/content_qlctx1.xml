@@ -10,7 +10,7 @@
 
     <TextView
         android:id="@+id/tvQuanly"
-        android:text="Customer Management"
+        android:text="Khách Hàng"
         android:textSize="28dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,13 +25,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvQuanly"
-        android:hint="Code"/>
+        android:hint="ID"/>
     <EditText
         android:id="@+id/edName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edCode"
-        android:hint="Name"/>
+        android:hint="Họ và Tên"/>
     <EditText
         android:id="@+id/edEmail"
         android:layout_width="match_parent"
@@ -43,63 +43,64 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edEmail"
-        android:hint="Phone"/>
+        android:hint="Điện Thoại"/>
     <EditText
         android:id="@+id/edAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edPhone"
-        android:hint="Address"/>
+        android:hint="Địa Chỉ"/>
     <EditText
         android:id="@+id/edXe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edAddress"
-        android:hint="Xe"/>
+        android:hint="Tuổi"/>
     <EditText
         android:id="@+id/edBiensoxe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edXe"
-        android:hint="Bien Số Xe"/>
+        android:hint="Bằng lái xe"/>
     <EditText
         android:id="@+id/edMauxe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edBiensoxe"
-        android:hint="Màu Xe"/>
+        android:hint="CMNN"/>
     <LinearLayout
         android:layout_below="@id/edMauxe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <Button
             android:id="@+id/btAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add"
-            android:background="#d2dbff"/>
+            android:text="Lưu"
+            android:background="#42f4b6"/>
 
         <Button
             android:id="@+id/btDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Delete"
-            android:background="#f7dddd"/>
+            android:text="Xóa"
+            android:background="#efec43"/>
 
         <Button
             android:id="@+id/btList"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="List"
-            android:background="#f0def4"/>
+            android:text="DSKH"
+            android:background="#f29c85"/>
         <Button
             android:id="@+id/btEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/btDelete"
-            android:text="Edit"
-            android:background="#feffd2"/>
+            android:text="Sửa"
+            android:background="#87ef83"/>
     </LinearLayout>
 </RelativeLayout>

@@ -34,7 +34,7 @@ public class Login extends AppCompatActivity {
                             strPassword.equalsIgnoreCase("Tuong")) {
                         Toast.makeText(getApplicationContext(), "Login successfull", Toast.LENGTH_SHORT).show();
 
-                        Intent intent = new Intent(Login.this, QLCTX1.class);
+                        Intent intent = new Intent(Login.this, ThongTinKH.class);
                         startActivity(intent);
                     }
                     else{
@@ -44,7 +44,7 @@ public class Login extends AppCompatActivity {
                             strPassword.equalsIgnoreCase("Hung")) {
                         Toast.makeText(getApplicationContext(), "Login successfull", Toast.LENGTH_SHORT).show();
 
-                        Intent intent = new Intent(Login.this, QLCTX1.class);
+                        Intent intent = new Intent(Login.this, ThongTinKH.class);
                         startActivity(intent);
                     }
                     else{
@@ -54,7 +54,7 @@ public class Login extends AppCompatActivity {
                             strPassword.equalsIgnoreCase("Toai")) {
                         Toast.makeText(getApplicationContext(), "Login successfull", Toast.LENGTH_SHORT).show();
 
-                        Intent intent = new Intent(Login.this, QLCTX1.class);
+                        Intent intent = new Intent(Login.this, ThongTinKH.class);
                         startActivity(intent);
                     }
                     else{
@@ -64,7 +64,7 @@ public class Login extends AppCompatActivity {
                             strPassword.equalsIgnoreCase("Bach")) {
                         Toast.makeText(getApplicationContext(), "Login successfull", Toast.LENGTH_SHORT).show();
 
-                        Intent intent = new Intent(Login.this, QLCTX1.class);
+                        Intent intent = new Intent(Login.this, ThongTinKH.class);
                         startActivity(intent);
                     }
                     else{

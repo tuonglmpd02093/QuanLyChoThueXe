@@ -147,14 +147,20 @@ public class QLCTX1 extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_listKH) {
-            Intent intent = new Intent(QLCTX1.this, DanhSachActivity.class);
+            Intent intent = new Intent(QLCTX1.this, QLCTX1.class);
             startActivity(intent);
-            //  list khách hàng action
-        } else if (id == R.id.nav_gallery) {
+            // Handle the camera action
+        } else if (id == R.id.nav_thue) {
+            Intent intent = new Intent(QLCTX1.this, DSXe.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_tra) {
+            Intent intent = new Intent(QLCTX1.this, DSTraXe.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_doi) {
+            Intent intent = new Intent(QLCTX1.this, DSDoiXe.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_share) {
 

@@ -16,12 +16,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- <activity android:name=".Login" /> -->
-        <activity android:name=".QLCTXActivity" />
-        <activity android:name=".DanhSachActivity" />
         <activity
             android:name=".QLCTX1"
             android:label="@string/title_activity_qlctx1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DSXe" />
+        <activity android:name=".QLCTXActivity" />
+        <activity android:name=".DanhSachActivity" />
+        <activity
+            android:name=".ThongTinKH"
+            android:label="@string/title_activity_thong_tin_kh"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DSDoiXe"
+            android:label="@string/title_activity_dsdoi_xe"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DSTraXe"
+            android:label="@string/title_activity_dstra_xe"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

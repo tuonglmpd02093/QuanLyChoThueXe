@@ -1,9 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DSXe">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvQuanly"
+        android:text="THUÊ XE"
+        android:textSize="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#716363"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edCode"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvQuanly"
+        android:hint="ID/KH"/>
+    <LinearLayout
+        android:id="@+id/edName"
+        android:layout_below="@id/edCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edCode"
+            android:hint="Ngày Thuê"
+            android:inputType="date"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lấy Ngày"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edEmail"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edName"
+            android:hint="Giờ Bắt đầu"
+            android:inputType="time"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lấy Giờ"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Thuê"
+            android:background="#d2dbff"/>
+
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:background="#f7dddd"/>
+    </LinearLayout>
+</RelativeLayout>

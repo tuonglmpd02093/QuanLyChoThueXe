@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,4 +8,69 @@
     tools:context=".DSDoiXe"
     tools:showIn="@layout/app_bar_dsdoi_xe">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvQuanly"
+        android:text="Đổi Xe"
+        android:textSize="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#716363"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvQuanly"
+        android:hint="ID/KH"/>
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edCode"
+        android:hint="Xe cần đổi"/>
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edName"
+        android:hint="Xe cần đổi"/>
+    <EditText
+        android:id="@+id/edAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPhone"
+        android:hint="Tình Trạng xe"/>
+    <EditText
+        android:id="@+id/edXe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edAddress"
+        android:hint="Tiền bồi thường"/>
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/edXe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Đổi Xe"
+            android:background="#d2dbff"/>
+
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="In hóa đơn"
+            android:background="#f7dddd"/>
+    </LinearLayout>
+
+</RelativeLayout>
